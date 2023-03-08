@@ -1,0 +1,89 @@
+.profile{
+    background-color: rgb(27, 26, 26);
+    height: 100vh;
+    color: floralwhite;
+}
+
+img{
+    width: 73px;
+    object-fit: contain;
+    margin-top: 17px;
+}
+
+.contents{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+
+    width: 30rem;
+    height: 72%;
+
+    /* border: 1px solid steelblue; */
+
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.hr{
+    margin-top: -20px;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(126, 122, 122);
+}
+
+.devider{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.content p{
+    background-color: grey;
+    padding: 5px;
+}
+
+.subscribes{
+    padding: 10px;
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -25px;
+}
+
+.subscribe p{
+    width: 180px;
+    background-color: transparent;
+}
+
+.subscribeButton {
+    width: 100px;
+    border-radius: 3px;
+    height: 35px;
+    background-color: #e50914;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.signOut{
+    width: 100%;
+    border-radius: 3px;
+    height: 40px;
+    background-color: #e50914;
+    border-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.subscribeButton:hover{
+    background-color: rgb(195, 36, 36);
+}
+.signOut:hover{
+    background-color: rgb(195, 36, 36);
+}

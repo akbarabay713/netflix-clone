@@ -1,0 +1,158 @@
+.Login{
+    height: 100vh;
+    
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(158, 66, 66, 0) 75%,rgba(0,0,0,.8) 100%);
+    object-fit: contain;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(
+        to top,
+    rgba(0,0,0,.8) 0,
+    rgba(0,0,0,0) 60%,
+    rgba(0,0,0,.8) 100%);
+}
+
+.nav{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 99;
+    position: relative;
+}
+
+
+
+.nav img{
+    max-width: 135px;
+    margin: 0;
+}
+
+.nav button{
+    padding: 5px 15px;
+    background-color: #e50914;
+    color: whitesmoke;
+    border-color: transparent;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+    box-sizing: border-box;
+    padding:0 .5rem;
+
+    gap: 10px;
+
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+}
+
+.content h1{
+    font-size: 2rem;
+}
+.content h3{
+    margin-top: -30px;
+    font-weight:normal;
+    font-size: 20px;
+}
+.content p{
+    margin-top: -15px;
+    font-weight:normal;
+    font-size: 18px;
+}
+
+.actions input{
+    padding: 7px;
+    height: 30px;
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.actions button{
+    padding: 7px;
+    height: 48px;
+    background-color: #e50914;
+    border-color: transparent;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .content{
+        min-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: whitesmoke;
+        text-align: center;
+        box-sizing: border-box;
+        padding:0 2.5rem;
+    
+        
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        margin: auto;
+    }
+    .content h1{
+        font-size: 50px;
+    }
+    .content h3{
+        margin-top: -30px;
+        font-weight:normal;
+        font-size: 25px;
+    }
+    .content p{
+        margin-top: -15px;
+        font-weight:normal;
+        font-size: 20px;
+    }
+
+    .actions{
+        display: flex;
+    }
+
+    .actions input{
+        padding: 7px;
+        height: 30px;
+        min-width: 25rem;
+    }
+    .actions button{
+        padding: 7px;
+        height: 48px;
+        width: 10rem;
+        background-color: #e50914;
+        border-color: transparent;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+}
