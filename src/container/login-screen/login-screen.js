@@ -53,7 +53,6 @@ const LoginScreen = () => {
         alert(error.message);
       });
   };
-
   const handleSignIn = (e) => {
     e.preventDefault();
 
