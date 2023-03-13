@@ -8,8 +8,9 @@ const Login = (props) => {
     onRegister,
     onSignIn,
     onShowModalLogin,
-    passwordRef,
-    emailRef,
+    onHandleChange,
+    user,
+    errors,
   } = props;
 
   let text = "";
@@ -18,8 +19,9 @@ const Login = (props) => {
       <ModalLogin
         close={onClose}
         clicked={onSignIn}
-        emailRef={emailRef}
-        passwordRef={passwordRef}
+        user={user}
+        errors={errors}
+        onHandleChange={onHandleChange}
         modalType="Sign In"
       />
     );
@@ -28,8 +30,9 @@ const Login = (props) => {
       <ModalLogin
         close={onClose}
         clicked={onRegister}
-        emailRef={emailRef}
-        passwordRef={passwordRef}
+        user={user}
+        errors={errors}
+        onHandleChange={onHandleChange}
         modalType="Sign Up"
       />
     );

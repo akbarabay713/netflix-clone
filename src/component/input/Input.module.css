@@ -1,0 +1,11 @@
+.error{
+    font-size: small;
+    margin-top:0px;
+    position: absolute;
+
+}
+
+.content{
+    position: relative;
+    margin-bottom: 25px;
+}

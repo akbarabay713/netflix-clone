@@ -1,11 +1,23 @@
 import Modal from "../modal";
-const ModalLogin = ({ clicked, emailRef, passwordRef, close, modalType }) => {
+import Input from "../../input/Input";
+const ModalLogin = (props) => {
+  const { clicked, onHandleChange, user, errors, close, modalType } = props;
   return (
     <Modal close={close}>
       <form onSubmit={clicked} onClick={(e) => e.stopPropagation()}>
         <h3>{modalType}</h3>
-        <input type="email" placeholder="Email" ref={emailRef} />
-        <input type="password" placeholder="Password" ref={passwordRef} />
+        <Input
+          label="email"
+          value={user.email}
+          errors={errors}
+          onHandleChange={onHandleChange}
+        />
+        <Input
+          label="password"
+          value={user.password}
+          errors={errors}
+          onHandleChange={onHandleChange}
+        />
         <button type="submit">{modalType}</button>
         {modalType === "Sign In" ? (
           <p>
