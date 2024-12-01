@@ -1,7 +1,14 @@
 import Modal from "../modal";
 import Input from "../../input/Input";
+import { useEffect } from "react";
 const ModalLogin = (props) => {
   const { clicked, onHandleChange, user, errors, close, modalType } = props;
+  useEffect(() =>{
+    return () => {
+      user.email = ''
+      user.password = ''
+    }
+  })
   return (
     <Modal close={close}>
       <form onSubmit={clicked} onClick={(e) => e.stopPropagation()}>

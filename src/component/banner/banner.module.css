@@ -12,6 +12,8 @@
 .fadeBottom{
     height: 4.5em;
     background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#111);
+    position: absolute;
+    bottom: 0;
 }
 
 .content{

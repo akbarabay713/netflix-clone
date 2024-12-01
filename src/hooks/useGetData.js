@@ -5,7 +5,7 @@ const useGetData = (fetchUrl) => {
   useEffect(() => {
     async function getItems() {
       const { data } = await axios.get(fetchUrl);
-
+      console.log(data.results)
       const filter = data.results.filter(
         (movie) => movie.media_type === "movie" || !movie.media_type
       );

@@ -44,6 +44,7 @@ const Row = ({ fetchUrl, title, isLarge }) => {
               <img
                 src={`https://image.tmdb.org/t/p/original${item?.backdrop_path}`}
                 alt="something"
+                loading="lazy"
               />
             </div>
           );

@@ -58,14 +58,14 @@ const Banner = () => {
     <header className={styles.header} style={bannerStyles}>
       <div className={styles.content}>
         {isShow && <ModalMovie onClose={handleClose} urlTrailer={urlTrailer} />}
-        <h1>{items?.title}</h1>
+        <h1>{items?.title || '-'}</h1>
         <div className={styles.buttons}>
           <button onClick={() => handleClick(items?.id)}>
             <img src="play_button.png" alt="button" />
             play
           </button>
         </div>
-        <p>{truncate(`${items?.overview}`, 150)}</p>
+        <p>{truncate(`${items?.overview || '-'}`, 150)}</p>
       </div>
       <div className={styles.fadeBottom}></div>
     </header>
